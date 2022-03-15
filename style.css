@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{font-size: 16px;}
+
+body{
+    height: 100vh;
+    background-color: #bec1ca;
+    display: grid;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav-prim{
+    position: absolute;
+    z-index: 10;
+    padding-top: 5px;
+    font-size: 1.2rem;
+    background-color: rgba(209, 209, 209, 0.404);
+    backdrop-filter: blur(30px);
+    z-index: 100;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+    text-shadow: 4px 4px 10px #000000ab;
+    display: flex;
+   justify-content: space-around;
+    width: 100%;
+    height: 3.3rem;
+    align-items: center;
+    box-shadow: 3px 1px 10px #25252585;
+    text-transform: uppercase;
+}
+
+.nav-prim .logo{
+   margin-left: -10px;
+   
+}
+ul{
+    list-style: none;
+    
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+nav a{
+    margin: auto;
+    padding: 1rem;
+    color: rgb(205, 222, 233);
+    font-weight: 800;
+    text-shadow: 0px 0px 10px rgba(29, 28, 28, 0.507);
+    
+}
+a:hover {color: rgb(231, 67, 103);}
+.nav-links{
+    display: flex;
+    flex-direction: column;
+   row-gap: 5px ;
+    font-size: .9rem;
+   height: 100%;
+}
+.container{
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+
+}
+h2{
+    display: flex;
+    width:86vw;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 1rem ;
+    color: aliceblue;
+    border-radius: 8px;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.26);
+    background-color: rgba(173, 173, 173, 0.342);
+    backdrop-filter: blur(30px);
+    z-index: 100;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+    text-shadow: 4px 4px 10px #0000009a;
+}
+
+.buton{
+    padding: .4rem;
+    width: 6rem;
+    font-size: 1rem;
+    color: rgb(3, 3, 3);
+    background-color: rgba(240, 240, 240, 0.486);
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.473);
+    cursor: pointer;
+}
+.buton:hover{ 
+    color:aliceblue;
+    background-color: rgb(41, 41, 42);
+}
+
+@media (min-width:450px){
+    html{
+        font-size: 18px;
+    }
+
+    .nav-links{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+  
+}
+@media (min-width:535px){
+    html{
+        font-size: 20px;
+    }
+
+   h2{
+       width: 510px;
+   }
+   .nav-prim .logo{
+    margin-left: -10px;
+    width: 120px;
+ }
+}
