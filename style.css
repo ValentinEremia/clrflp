@@ -9,7 +9,7 @@ body{
     height: 100vh;
     background-color: #bec1ca;
     display: grid;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:  sans-serif;
 }
 
 .nav-prim{
@@ -73,20 +73,25 @@ a:hover {color: rgb(231, 67, 103);
    height: 100%;
    user-select: none;
 }
+
+
 .container{
 
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    
     margin: auto;
-    justify-content: center;
+    gap: 1rem;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 75vh;
+    
 
 }
 h2{
+    position: relative;
+    margin: auto;
     display: flex;
     width:86vw;
     justify-content: center;
@@ -103,6 +108,11 @@ h2{
     border: 2px solid transparent;
     text-shadow: 4px 4px 10px #0000003b;
 }
+h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: auto;
+}
 
 .buton{
     padding: .7rem;
@@ -111,7 +121,7 @@ h2{
     color: rgb(227, 187, 250);
     background-color: rgb(24, 24, 24);
     border-radius: 10px;
-    
+    bottom: .6rem;
     
     cursor: pointer;
     user-select: none;
